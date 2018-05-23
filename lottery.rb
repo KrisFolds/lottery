@@ -10,13 +10,14 @@ def correct_numbers()
 end
 
 
-def matching_numbers(number1, number2, number3, number4, number5, number6, winning_numbers)
+def matching_numbers(number1, number2, number3, number4, number5, number6, winning_number1, winning_number2, winning_number3, winning_number4, winning_number5, winning_number6)
 		final = []
-		your_numbers = [number1, number2, number3, number4, number5, number6]	
+		your_numbers = [number1, number2, number3, number4, number5, number6]
+		winning_numbers = [winning_number1, winning_number2, winning_number3, winning_number4, winning_number5, winning_number6]	
 	 	your_numbers.each do |number|
 	 		winning_numbers.each do |number2|
 	 			if number == number2	 
-	 				final << number
+	 				final.push(number)
 	 			end
 	 		end
 	 	end
