@@ -1,7 +1,6 @@
  Ur numerals were <%=number1%>, <%=number2%>, <%=number3%>, <%=number4%>, <%=number5%>, <%=number6%>
  <br>
  <% winning_numbers = correct_numbers() %>
- <% puts winning_numbers %>
  <% winning_number1 = winning_numbers[0] %>
  <% winning_number2 = winning_numbers[1] %>
  <% winning_number3 = winning_numbers[2] %>
@@ -9,23 +8,21 @@
  <% winning_number5 = winning_numbers[4] %>
  <% winning_number6 = winning_numbers[5] %>
  <% count = matching_numbers(number1, number2, number3, number4, number5, number6, winning_number1, winning_number2,  winning_number3,  winning_number4,  winning_number5,  winning_number6) %>
- <% puts count %>
- <% puts count.class %>
  <br>
-	<% if count ==  1 %>
+	<% if count == 1 %>
 	 	"You match one number, you git a buck"
-	<% elsif count ==  2 %>
+	<% elsif count == 2 %>
 	 	"You matched two numbers, you git baccar money"
-	<% elsif count ==  3 %>
+	<% elsif count == 3 %>
 	 	"You matched 3 numbers, we's having us a party tonight"
-	<% elsif count ==  4 %>
+	<% elsif count == 4 %>
 	 	"You matched 4 numbers, Y'all fire up the truck. We's going to the Red Lobster tonight"
-	<% elsif count ==  5 %>
+	<% elsif count == 5 %>
 	 	"You matched 5 numbers, Geraldine can finally get that goiter removed"
-	<% elsif count ==  6 %>
+	<% elsif count == 6 %>
 		"You matched all numbers!  Yes sir, I would like a vintage white whine with my filet mignon."
-	<% elsif count ==  0 %>
-		 "Daggnabbit I knew i shoulda bought lil Jimmy's diarrhea medication"
+	<% elsif count == 0 %>
+		 "Daggnabbit I knew i shoulda bought lil Jimmy's medication stead of this here ticket"
 	<%end%>
     <br>
     <br>
